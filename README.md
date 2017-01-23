@@ -20,3 +20,10 @@ I am using dimple.js charting library in creating my visualisations.
 First I explored Passenger class('Class') and survival by gender('Sex').                  
 Here both Class and Gender and categorical variables.So,to represent the number of survived people in each category, I used bar chart.
 Visual encoding:the x-axis represents Class.Color is used to reprsent Sex.y-axis represents number of survived people.    
+
+![v1_initial](https://cloud.githubusercontent.com/assets/23693349/22194779/6cdedcf8-e16a-11e6-8d6a-e53f84489e10.PNG)       
+
+Next,I used 'Embarked' and "Survived" by "Sex"
+Embarked is also a categorical variable.So ,here also I used a bar chart.
+Visual encoding:x-axis represent port embarked,y-axis reprsents people who survived and color rpresents male or female.      
+

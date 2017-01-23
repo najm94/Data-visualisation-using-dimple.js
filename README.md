@@ -27,3 +27,7 @@ Next,I used 'Embarked' and "Survived" by "Sex"
 Embarked is also a categorical variable.So ,here also I used a bar chart.
 Visual encoding:x-axis represent port embarked,y-axis reprsents people who survived and color rpresents male or female.      
 
+![v2_initial](https://cloud.githubusercontent.com/assets/23693349/22194857/c020f8ce-e16a-11e6-9b24-c3bd45037e77.PNG)
+
+Finally,using "Age","Sex" and "Survived",I used a line plot to show the decreasing trend in survival rate with age.                 
+

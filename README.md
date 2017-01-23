@@ -31,3 +31,27 @@ Visual encoding:x-axis represent port embarked,y-axis reprsents people who survi
 
 Finally,using "Age","Sex" and "Survived",I used a line plot to show the decreasing trend in survival rate with age.                 
 
+![v3_initial](https://cloud.githubusercontent.com/assets/23693349/22194889/f5cf3544-e16a-11e6-8941-a8f9b96f1d90.PNG)
+
+###Feedback       
+####Feedback 1
+I can clearly see the difference in survival rate for males and females in charts 1 and 2 but there is not title for any of the plots.I recommend using survival rate as a measure instead of survived in numbers.Also,I suggest that you group the ages into bins so that the overall trend in survival rate with age and also the plot will look more neat and less cluttered.Depending on what story you are trying to tell,i.e showing trends in survival rate with age or showing individual survival rate among age groups,choose a suitable plot.     
+
+####Feedback 2
+In the first and second visualisation,the story you are trying to communicate is survival rate by gender.So instead of using a simple bar chart,why don't you try a horizontal grouped stacked chart with suvival rate on x-axis and class on y-axis for visual 1 and port embarked on y axis for visual 2?It will better depict the differences among gender.Also,the third visualisation doesn't tell a clear story because the patterns are quite abrupt since you plotted survival for each age.Include titles for each visuals.        
+
+####Feedback 3
+Choice of plots is okay.But the problem with first and second visual is that the survival is in terms of numbers which is not a good measure here.I would suggest expressing it as a rate or percentageThe third visual looks a bit messy,so try binning the age groups for a smoother plot!Also,try other chart types for the third visual.Please add suitable x and y labels too.         
+
+###Design changes after feedback   
+Incorporating the suggestions from the feedback,I implemented the following changes:   
+1.Added title for each visual    
+2.Grouped the ages into bins     
+3.Replaced the standard bar chart with horizontal grouped bar chart for visuals 1 and 2    
+4.For visual 3,I replaced with vertical floating bars since I wanted the viewer to clearly see in which age group the survival rate was highest    
+5.Added proper x and y labels   
+
+####Visual 1 final version
+
+
+

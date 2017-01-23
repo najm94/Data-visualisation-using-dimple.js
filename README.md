@@ -55,6 +55,9 @@ Incorporating the suggestions from the feedback,I implemented the following chan
 ![visual1_final](https://cloud.githubusercontent.com/assets/23693349/22195050/dd221d8a-e16b-11e6-8328-d7deda4ba1a8.PNG)   
 
 ####Visual 2 final version
+![v2_final](https://cloud.githubusercontent.com/assets/23693349/22195211/cda51410-e16c-11e6-8dba-bacc5e59eca1.PNG)
+
+####Visual 3 final version
 
 
 

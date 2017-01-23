@@ -52,6 +52,9 @@ Incorporating the suggestions from the feedback,I implemented the following chan
 5.Added proper x and y labels   
 
 ####Visual 1 final version
+![visual1_final](https://cloud.githubusercontent.com/assets/23693349/22195050/dd221d8a-e16b-11e6-8328-d7deda4ba1a8.PNG)   
+
+####Visual 2 final version
 
 
 

@@ -78,11 +78,11 @@
 
        myChart.addLegend(400, 20, 380, 20, "right");
        myChart.draw();
-       y.titleShape.text("Port Embarked");
-       x.titleShape.text("Survival rate");
+       y.titleShape.text("Port Embarked");//y label
+       x.titleShape.text("Survival rate");//x label
     });
 
-/*plot 3*/
+/*plot 3-Survival rate by age and gender*/
 
     var svg3 = dimple.newSvg("#chart3", 900, 490);
     d3.csv("titanic_finall1.csv", function(data) {

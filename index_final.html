@@ -45,7 +45,7 @@
         .style("text-anchor", "middle")
         .style("font-weight", "bold")
         .text("Survival Rate by passenger class and gender ");
-
+      //Main title
         svg1.append("text")
         .attr("x", myChart._xPixels() + myChart._widthPixels() /2)
         .attr("y", myChart._yPixels() - 40)
@@ -91,10 +91,10 @@
        x=myChart.addCategoryAxis("x", "Age Group");
        x.addOrderRule(["N/A","0-15", "15-30", "30-45", "45-60", "60+"]);
        y=myChart.addPctAxis("y", "Survived");
-       y.overrideMax=1;
+       y.overrideMax=1;//Setting y-axis from 0% to 100%
        var s=myChart.addSeries("Sex", dimple.plot.bar);
        s.stacked=false;
-
+      //Title for plot 3
        svg3.append("text")
       .attr("x", myChart._xPixels() + myChart._widthPixels() / 2)
       .attr("y", myChart._yPixels() - 50)

@@ -6,16 +6,16 @@
         <script src="http://dimplejs.org/dist/dimple.v2.2.0.min.js"></script>
     </head>
     <body>
-        <!-- Visible Content and scripts -->
-        <div id="chartContainer"></div>
-        <script type="text/javascript">
-            var svg = dimple.newSvg("#chartContainer", 590, 400);
-            d3.csv("titanic_data.csv", function(data) {
-                var myChart = new dimple.chart(svg, data);
+       <div id="chartContainer"></div>
+       <script type="text/javascript">
+          //Survival rate based on passenger class
+       var svg = dimple.newSvg("#chartContainer", 590, 400);
+            d3.csv("titanic_finall1.csv", function(data) {
+                        var myChart = new dimple.chart(svg, data);
                 myChart.setBounds(60, 30, 510, 330)
-                myChart.addCategoryAxis("x", ["Pclass", "Sex"]);
+                myChart.addCategoryAxis("x", ["Class", "Sex"]);
                 myChart.addMeasureAxis("y", "Survived");
-                myChart.addSeries("Sex", dimple.plot.bar);
+                myChart.addSeries("Sex", dimple.plot.bar);//Plot a bar chart
                 myChart.addLegend(65, 10, 510, 20, "right");
                 myChart.draw();
             });

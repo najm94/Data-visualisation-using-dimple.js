@@ -9,7 +9,7 @@
         <div id="chartContainer"></div>
         <script type="text/javascript">
             var svg = dimple.newSvg("#chartContainer", 1000, 400);
-            d3.csv("titanicc_final.csv", function(data) {
+            d3.csv("titanic_Data.csv", function(data) {
                    var myChart = new dimple.chart(svg, data);
               myChart.addCategoryAxis("x", "Age");
               myChart.addMeasureAxis("y", "Survived");

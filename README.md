@@ -58,7 +58,8 @@ Incorporating the suggestions from the feedback,I implemented the following chan
 ![v2_final](https://cloud.githubusercontent.com/assets/23693349/22195211/cda51410-e16c-11e6-8dba-bacc5e59eca1.PNG)
 
 ####Visual 3 final version
-![v3_final](https://cloud.githubusercontent.com/assets/23693349/22195269/1496d598-e16d-11e6-875a-5f4fa853f1fc.PNG)
+![v1-final](https://cloud.githubusercontent.com/assets/23693349/22278473/c58615da-e2e9-11e6-9278-8c40c4ba0eda.PNG)
+
 
 ###Resources
 1.https://github.com/allanbreyes/udacity-data-science/tree/master/p5   

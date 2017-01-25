@@ -10,7 +10,7 @@
         <script type="text/javascript">
             //Survival rate based on port embarked and gender
             var svg = dimple.newSvg("#chartContainer", 590, 400);
-            d3.csv("titanic_finall1.csv", function(data) {
+            d3.csv("titanic_Data.csv", function(data) {
                        var myChart = new dimple.chart(svg, data);
                 myChart.setBounds(60, 30, 510, 330)
                 myChart.addCategoryAxis("x", ["Embarked", "Sex"]);

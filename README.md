@@ -52,10 +52,12 @@ Incorporating the suggestions from the feedback,I implemented the following chan
 5.Added proper x and y labels   
 
 ####Visual 1 final version
-![visual1_final](https://cloud.githubusercontent.com/assets/23693349/22195050/dd221d8a-e16b-11e6-8328-d7deda4ba1a8.PNG)   
+![v11-final](https://cloud.githubusercontent.com/assets/23693349/22279355/6e47c2f8-e2f0-11e6-8e3e-7899899e9de3.PNG)
+
 
 ####Visual 2 final version
 ![v2_final](https://cloud.githubusercontent.com/assets/23693349/22195211/cda51410-e16c-11e6-8dba-bacc5e59eca1.PNG)
+
 
 ####Visual 3 final version
 ![v1-final](https://cloud.githubusercontent.com/assets/23693349/22278473/c58615da-e2e9-11e6-9278-8c40c4ba0eda.PNG)

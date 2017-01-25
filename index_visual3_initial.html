@@ -5,12 +5,12 @@
         <script src="http://dimplejs.org/dist/dimple.v2.2.0.min.js"></script>
     </head>
     <body>
-        <!-- Visible Content and scripts -->
+        //Survival rate based on age and gender
         <div id="chartContainer"></div>
         <script type="text/javascript">
             var svg = dimple.newSvg("#chartContainer", 1000, 400);
             d3.csv("titanicc_final.csv", function(data) {
-              var myChart = new dimple.chart(svg, data);
+                   var myChart = new dimple.chart(svg, data);
               myChart.addCategoryAxis("x", "Age");
               myChart.addMeasureAxis("y", "Survived");
               myChart.addSeries("Sex", dimple.plot.line);

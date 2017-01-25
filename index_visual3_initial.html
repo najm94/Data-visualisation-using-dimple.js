@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="http://d3js.org/d3.v3.min.js"></script>
+        <script src="http://dimplejs.org/dist/dimple.v2.2.0.min.js"></script>
+    </head>
+    <body>
+        <!-- Visible Content and scripts -->
+        <div id="chartContainer"></div>
+        <script type="text/javascript">
+            var svg = dimple.newSvg("#chartContainer", 1000, 400);
+            d3.csv("titanicc_final.csv", function(data) {
+              var myChart = new dimple.chart(svg, data);
+              myChart.addCategoryAxis("x", "Age");
+              myChart.addMeasureAxis("y", "Survived");
+              myChart.addSeries("Sex", dimple.plot.line);
+              myChart.addLegend(200, 10, 380, 20, "right");
+              myChart.draw();
+            });
+        </script>
+    </body>
+</html>

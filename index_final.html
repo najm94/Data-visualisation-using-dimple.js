@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Titanic Data Exploration</title>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="http://dimplejs.org/dist/dimple.v2.0.0.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet"/>
+    <style>
+      h2 {
+        color: black;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+<body class="container">
+
+	<div class="row">
+		    <div id="chart1"></div>
+	</div>
+
+  <div class="row">
+		    <div id="chart2"></div>
+	</div>
+
+	<div class="row">
+		    <div id="chart3"></div>
+	</div>
+
+	<script type="text/javascript">
+  /*Plot 1:Survival rate by passenger class and gender*/
+  var svg1 = dimple.newSvg("#chart1", 900, 490);//create new svg element
+
+    d3.csv("titanic_finall1.csv", function(data) {//load data
+             var myChart = new dimple.chart(svg1, data);
+        myChart.setBounds(90, 70, 700, 330)
+        x=myChart.addPctAxis("x", "Survived");//draw axes
+        y=myChart.addCategoryAxis("y", "Class");
+        myChart.addSeries("Sex", dimple.plot.bar);//draw the plot
+       //Add title for plot 1
+        svg1.append("text")
+        .attr("x", myChart._xPixels() + myChart._widthPixels() / 2)
+        .attr("y", myChart._yPixels() - 5)
+        .style("text-anchor", "middle")
+        .style("font-weight", "bold")
+        .text("Survival Rate by passenger class and gender ");
+
+        svg1.append("text")
+        .attr("x", myChart._xPixels() + myChart._widthPixels() /2)
+        .attr("y", myChart._yPixels() - 40)
+        .style("text-anchor", "middle")
+        .style("font-weight", "bold")
+        .text("Female passengers had higher rate of survival whether we look across passenger class,the port embarked or by age group");
+        //Add legend
+        myChart.addLegend(400, 55, 380, 3, "right");
+        myChart.draw();
+        y.titleShape.text("Passenger class");
+        x.titleShape.text("Survival rate");
+    });
+
+
+/*plot 2-Survival rate by port embarked and gender*/
+    var svg2 = dimple.newSvg("#chart2", 900, 490);//create svg element
+    d3.csv("titanic_finall1.csv", function(data) {
+            var myChart = new dimple.chart(svg2, data);
+        myChart.setBounds(90, 70, 700, 330);
+        x=myChart.addPctAxis("x", "Survived");//Add axes
+        y=myChart.addCategoryAxis("y", "Embarked");
+        myChart.addSeries("Sex", dimple.plot.bar);
+        //Add title
+        svg2.append("text")
+       .attr("x", myChart._xPixels() + myChart._widthPixels() / 2)
+       .attr("y", myChart._yPixels() - 40)
+       .style("text-anchor", "middle")
+       .style("font-weight", "bold")
+       .text("Survival Rate by port embarked and gender ");
+
+       myChart.addLegend(400, 20, 380, 20, "right");
+       myChart.draw();
+       y.titleShape.text("Port Embarked");
+       x.titleShape.text("Survival rate");
+    });
+
+/*plot 3*/
+
+    var svg3 = dimple.newSvg("#chart3", 900, 490);
+    d3.csv("titanic_finall1.csv", function(data) {
+             var myChart = new dimple.chart(svg3, data);
+       myChart.setBounds(90, 70, 700, 330);
+       x=myChart.addCategoryAxis("x", "Age Group");
+       x.addOrderRule(["N/A","0-15", "15-30", "30-45", "45-60", "60+"]);
+       y=myChart.addPctAxis("y", "Survived");
+       y.overrideMax=1;
+       var s=myChart.addSeries("Sex", dimple.plot.bar);
+       s.stacked=false;
+
+       svg3.append("text")
+      .attr("x", myChart._xPixels() + myChart._widthPixels() / 2)
+      .attr("y", myChart._yPixels() - 50)
+      .style("text-anchor", "middle")
+      .style("font-weight", "bold")
+      .text(" Survival rate by age group and gender");
+
+       myChart.addLegend(400, 10, 380, 20, "right");
+       myChart.draw();
+       y.titleShape.text("Survival rate");
+     });
+</script>
+</body>
+</html>
